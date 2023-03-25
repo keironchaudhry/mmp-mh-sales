@@ -12,7 +12,7 @@ const NavBarLinks = (
   <>
     <NavLink
       className={`me-3 ${styles.NavLinks}`}
-      href="https://malagamonteparc.com/"
+      to="https://malagamonteparc.com/"
       target="_blank"
     >
       <i class="fa-solid fa-campground"></i>Campsite

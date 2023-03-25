@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,16 +10,16 @@ import styles from "./NavBar.module.css";
 
 const NavBarLinks = (
   <>
-    <Nav.Link
+    <NavLink
       className={styles.NavLinks}
       href="https://malagamonteparc.com/"
       target="_blank"
     >
       <i class="fa-solid fa-campground"></i>Campsite
-    </Nav.Link>
-    <Nav.Link className={styles.NavLinks} href="#">
+    </NavLink>
+    <NavLink className={styles.NavLinks} to="/contact">
       <i class="fa-regular fa-comment"></i>Contact
-    </Nav.Link>
+    </NavLink>
   </>
 );
 

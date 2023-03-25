@@ -1,0 +1,36 @@
+.App {
+  font-family: "Lora", sans-serif;
+  background-color: #fff5ee;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #555555;
+  transition: color ease-in-out 0.3s;
+}
+
+a:hover {
+  color: #000;
+  opacity: 0.7;
+}
+
+a:hover i {
+  color: #f99417;
+  transition: color ease-in-out 0.3s;
+}
+
+i {
+  color: #f99417;
+  font-size: 1.8rem;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+i:hover {
+  cursor: pointer;
+  transition: color ease-in-out 0.3s;
+}

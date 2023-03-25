@@ -8,7 +8,7 @@ import logo from "../../assets/logo.png";
 import styles from "./NavBar.module.css";
 
 const NavBarLinks = (
-  <Nav>
+  <>
     <Nav.Link
       className={styles.NavLinks}
       href="https://malagamonteparc.com/"
@@ -19,18 +19,20 @@ const NavBarLinks = (
     <Nav.Link className={styles.NavLinks} href="#">
       <i class="fa-regular fa-comment"></i>Contact
     </Nav.Link>
-  </Nav>
+  </>
 );
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="light" variant="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" height="80" />
         </Navbar.Brand>
-
-        {NavBarLinks}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto text-center">{NavBarLinks}</Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

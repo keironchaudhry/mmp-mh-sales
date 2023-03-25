@@ -1,6 +1,7 @@
 .NavLinks {
   font-size: 20px;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .NavLinks:hover {

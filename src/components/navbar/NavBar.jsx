@@ -11,7 +11,7 @@ import styles from "./NavBar.module.css";
 const NavBarLinks = (
   <>
     <NavLink
-      className={styles.NavLinks}
+      className={`me-3 ${styles.NavLinks}`}
       href="https://malagamonteparc.com/"
       target="_blank"
     >

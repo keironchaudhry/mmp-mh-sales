@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,16 +10,16 @@ import styles from "./NavBar.module.css";
 
 const NavBarLinks = (
   <>
-    <Nav.Link
-      className={styles.NavLinks}
-      href="https://malagamonteparc.com/"
+    <NavLink
+      className={`me-3 ${styles.NavLinks}`}
+      to="https://malagamonteparc.com/"
       target="_blank"
     >
       <i class="fa-solid fa-campground"></i>Campsite
-    </Nav.Link>
-    <Nav.Link className={styles.NavLinks} href="#">
+    </NavLink>
+    <NavLink className={styles.NavLinks} to="/contact">
       <i class="fa-regular fa-comment"></i>Contact
-    </Nav.Link>
+    </NavLink>
   </>
 );
 
@@ -26,9 +27,11 @@ const NavBar = () => {
   return (
     <Navbar bg="light" variant="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" height="80" />
-        </Navbar.Brand>
+        <NavLink to="/">
+          <Navbar.Brand>
+            <img src={logo} alt="Logo" height="80" />
+          </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">{NavBarLinks}</Nav>

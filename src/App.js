@@ -13,8 +13,8 @@ function App() {
       <NavBar />
       <Container>
         <Routes>
-          <Route path="/" render={() => <Home />} />
-          <Route path="/contact" render={() => <Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
     </div>

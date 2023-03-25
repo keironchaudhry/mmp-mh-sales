@@ -27,9 +27,11 @@ const NavBar = () => {
   return (
     <Navbar bg="light" variant="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" height="80" />
-        </Navbar.Brand>
+        <NavLink to="/">
+          <Navbar.Brand>
+            <img src={logo} alt="Logo" height="80" />
+          </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-center">{NavBarLinks}</Nav>

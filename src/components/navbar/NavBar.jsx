@@ -5,11 +5,20 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
 import logo from "../../assets/logo.png";
+import styles from "./NavBar.module.css";
 
 const NavBarLinks = (
-  <Nav className="me-auto">
-    <Nav.Link href="#home">Campsite</Nav.Link>
-    <Nav.Link href="#pricing">Contact</Nav.Link>
+  <Nav>
+    <Nav.Link
+      className={styles.NavLinks}
+      href="https://malagamonteparc.com/"
+      target="_blank"
+    >
+      <i class="fa-solid fa-campground"></i>Campsite
+    </Nav.Link>
+    <Nav.Link className={styles.NavLinks} href="#">
+      <i class="fa-regular fa-comment"></i>Contact
+    </Nav.Link>
   </Nav>
 );
 

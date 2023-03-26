@@ -1,9 +1,8 @@
 .App {
   font-family: "Lora", sans-serif;
   background-color: #fff5ee;
-  min-height: 100vh;
+  min-height: 150vh;
   padding-top: 10px;
-  /* padding-bottom: 55px; */
 }
 
 * {

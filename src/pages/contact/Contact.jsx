@@ -37,7 +37,7 @@ const ContactForm = (
 const Contact = () => {
   return (
     <Container className="d-inline-flex">
-      <Row className={`py-5 pe-2 me-3 col-6 ${styles.ContactContainer}`}>
+      <Row className={`py-5 pe-2 me-4 col-6 ${styles.ContactContainer}`}>
         <Col className="text-center">
           <div className="mb-3">
             <h3>Our contact details:</h3>
@@ -49,7 +49,7 @@ const Contact = () => {
         </Col>
         <Image src={heroImage} className={`${appStyles.Image} mt-5`} />
       </Row>
-      <Row className={`py-5 pe-2 me-3 col-6 ${styles.ContactContainer}`}>
+      <Row className={`py-5 pe-2 me-4 col-6 ${styles.ContactContainer}`}>
         {ContactForm}
       </Row>
     </Container>

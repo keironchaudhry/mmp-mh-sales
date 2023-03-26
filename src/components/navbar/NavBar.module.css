@@ -1,3 +1,8 @@
+.NavbarComponent {
+  opacity: 0.9;
+  border-bottom: 1px solid #dadadf;
+}
+
 .NavLinks {
   font-size: 20px;
   letter-spacing: 1px;

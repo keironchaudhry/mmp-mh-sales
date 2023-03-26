@@ -25,7 +25,7 @@ const NavBarLinks = (
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" variant="light" expand="lg" fixed="top">
+    <Navbar className={styles.NavbarComponent} bg="light" variant="light" expand="lg" fixed="top">
       <Container>
         <NavLink to="/">
           <Navbar.Brand>

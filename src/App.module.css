@@ -2,6 +2,8 @@
   font-family: "Lora", sans-serif;
   background-color: #fff5ee;
   min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
 
 * {
@@ -34,3 +36,4 @@ i:hover {
   cursor: pointer;
   transition: color ease-in-out 0.3s;
 }
+
